@@ -28,6 +28,14 @@ const collectEmployees = function () {
   console.log(employeesArray);
   console.log("===");
   //****************************************************************************************************************//
+  for (let i = 0; i < employeesArray.length; i++) {
+    total += Math.floor(parseFloat(employeesArray[i].salary));
+  }
+  avg = Math.floor(parseFloat(total / employeesArray.length));
+  console.log(`The average employee salary between our ${employeesArray.length} employee(s) is $ ${parseFloat(avg)}.00`);
+  //****************************************************************************************************************//
+  console.log("===");
+  //****************************************************************************************************************//
   return;
 }
 
